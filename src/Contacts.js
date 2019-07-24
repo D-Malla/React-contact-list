@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import IndividualContact from "./IndividualContact"
 import users from './randomUsers.json';
 import "./App.css";
-import {FaUserCircle} from 'react-icons/fa';
 
 class Contacts extends Component {
   render() {

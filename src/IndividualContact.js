@@ -4,7 +4,6 @@
   import { BrowserRouter as Router, Route, Link } from "react-router-dom";
   import {FaArrowLeft, FaEnvelope, FaMobileAlt, FaGlobeAmericas} from 'react-icons/fa'; 
   import {FaUserAlt} from 'react-icons/fa'; 
-  import {FaUserCircle} from 'react-icons/fa';
   import "./App.css";
 
 
