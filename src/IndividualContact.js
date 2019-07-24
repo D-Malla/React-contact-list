@@ -5,21 +5,26 @@
   import {FaArrowLeft, FaEnvelope, FaMobileAlt, FaGlobeAmericas} from 'react-icons/fa'; 
   import {FaUserAlt} from 'react-icons/fa'; 
   import {FaUserCircle} from 'react-icons/fa';
-  import "./app.css";
+  import "./App.css";
 
 
   class IndividualContact extends Component {
-  state = {
+  
+  
+    state = {
+    image: '',
     name: '',
     email: '',
     phone: '',
     location: ''
   };
 
+
   getUsers = (id) => {
     const people = users.find(user => id == user.id)
 
     this.setState({
+      image: people.picture.large,
       name: people.name.first + ' ' + people.name.last,
       email: people.email,
       phone: people.phone,
@@ -38,12 +43,13 @@
 
   }
 
+ 
   render() {
     return (
       <div id='contactDiv'>
       <div id="contactHeading">
         <Link to='/'><FaArrowLeft id="arrow"/></Link>
-        <FaUserCircle id="contactIcon"/>
+        <img src={this.state.image} id="contactIcon" />
       </div>
         <ul>
           <li><FaUserAlt className="contacts"/> {this.state.name}</li>

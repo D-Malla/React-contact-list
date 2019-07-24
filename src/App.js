@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Contact from "./Contacts"
 import IndividualContact from "./IndividualContact"
 import users from './randomUsers.json';
-import "./app.css";
-import {FaUserCircle} from 'react-icons/fa';
+import "./App.css";
+
 
 
 class App extends Component {

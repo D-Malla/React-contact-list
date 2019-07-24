@@ -49,6 +49,7 @@
 }
 
 #wrapper #mainIcons {
+  border-radius: 50%;
   height: 40px;
   width: 40px;
 }
@@ -85,6 +86,7 @@
   width: 300px;
   margin-left: 400px;
   margin-top: 75px;
+  border-radius: 50%;
 }
 
 #contactDiv #arrow {
